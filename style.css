@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Black+Ops+One&family=Tektur:wght@400..900&display=swap");
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+
+	user-select: none;
+}
+
+:root {
+	/* --background: #222831; */
+	--background: black;
+	--block-background: #393e46;
+	--block-border: #222831;
+	--textcolor: #aba8a8;
+
+	font-family: "Black Ops One", system-ui;
+	font-size: 50px;
+}
+
+body {
+	background-color: var(--background);
+	color: var(--textcolor);
+}
+
+header {
+	padding: 16px;
+	font-size: 100px;
+}
+
+.gsc-control-cse {
+	box-shadow: 3px 3px 14px var(--block-background);
+}
+
+.time {
+	text-align: center;
+	padding: 24px;
+}
+
+.bookmarks {
+	margin: 16px;
+
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+a {
+	width: 72px;
+	height: 72px;
+	background-color: var(--textcolor);
+	background-size: cover;
+
+	border: 2px solid var(--block-border);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.2s;
+
+	box-shadow: 1px 1px 14px var(--block-background);
+}
+a:hover {
+	transition: 0.2s;
+	transform: scale(0.9);
+}
+
+.img {
+	width: 56px;
+	height: 56px;
+}
+.img_big-one {
+	width: 45px;
+	height: 45px;
+}
+
+.bookmarks__chapter {
+	display: flex;
+	flex-direction: column;
+}
+.title {
+	font-size: 25px;
+}
+.links {
+	display: flex;
+	flex-direction: row;
+	gap: 32px;
+	padding: 32px;
+}

@@ -1,0 +1,27 @@
+
+MANAGEMENT
+tbank
+gmail
+github
+stackoverflow
+leetcode
+calendar
+miro
+
+SCHOOL
+schedule https://voenmeh.ru/obrazovanie/timetables/
+mail https://mail.voenmeh.ru/mail/
+
+NEWS AND KNOWLEDGE
+boosty
+youtube
+
+ABSOLUTE
+blindtyping
+Diction (https://mediashkola.com/education/library/10_skorogovorok_dlya_razvitiya_rechi_i_diktsii/)
+Duolingo
+
+OTHER
+translate
+
+

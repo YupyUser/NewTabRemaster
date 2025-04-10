@@ -33,15 +33,11 @@ header {
 
 	font-size: 60px;
 
-	display: flex;
-	justify-content: right;
-	align-items: center;
 }
 
 .time {
 	margin: 20px;
 	height-max: 120px;
-	width: 360px;
 	padding: 8px;
 
 	text-align: center;

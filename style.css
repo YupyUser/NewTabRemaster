@@ -86,7 +86,8 @@ header {
 
 	display: flex;
 	flex-wrap: wrap;
-	justify-content:first baseline;
+
+	height: 144px;
 
 }
 .link {
@@ -96,7 +97,10 @@ header {
 	margin: 4px;
 	padding: 8px;
 
+	height: 48px;
 
+	display: flex;
+	align-items: center;
 
 	transition: 200ms;
 }

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
 
 * {
 	padding: 0;
@@ -9,106 +9,92 @@
 
 	user-select: none;
 
-	color: #fac9c3;
+	color: var(--text-color);
 }
 
 :root {
 	/* --background: #222831; */
-	--background: url("./img/background2.jpg");
-
-	font-family: "Orbitron", sans-serif;
+	--background: #172F4D;
+	--block-color: #4381C1;
+	--shadow: #DB3A34;
+	--text-color: #EEF4ED;
 }
 
 body {
-	background: var(--background) no-repeat;
-	background-size: cover;
-	background-position: center;
-	min-height: 100vh;
-	
-	color: #fac9c3;
-	text-shadow: 3px 3px 4px #d34a37, -3px -3px 4px #d34a37;
+	background: var(--background);
+	font-family: "Krona One", sans-serif;
 }
-
-header {
-
-	font-size: 60px;
-
-}
-
-.time {
-	margin: 20px;
-	height-max: 120px;
-	padding: 8px;
-
-	text-align: center;
-	
-	backdrop-filter: blur(50px);
-	
-	border: 2px solid #fac9c3;
-	border-radius: 5px;
-	box-shadow: 3px 3px 5px #d34a37, -3px -3px 5px #d34a37;
-}
-
-
-.navigation {
-	font-size: 20px;
-
-	margin: 20px;
-
+main {
 	display: flex;
 	justify-content: space-between;
 }
+.left {
+	width: 66%;
+	
+	display: flex;
+	flex-wrap: wrap;
+}
+.right {
+	width: 34%;
+	
+	display: flex;
+	justify-content: center;
 
-.column {
+}
+
+.links-sphere {
+	width: 33%;
+
 	display: flex;
 	flex-direction: column;
 
-	width: 30%;
-
+	margin-bottom: 64px;
 }
 
-.row {
-	margin-bottom: 32px;
-}
+.sphere-title {
+	padding: 12px;
+	margin: 8px auto;
 
-.title {
-	font-size: 30px;
-	backdrop-filter: blur(8px);
-	box-shadow: inset 3px 3px 10px #d34a37;
-	border: 2px solid #fac9c3;
+	background-color: var(--block-color);
+	box-shadow: 2px 2px 4px var(--shadow);
+	font-size: 16px;
 	text-align: center;
 
-	padding: 8px;
-	margin-bottom: 16px;
+	width: 196px;
 }
-.links {
-	backdrop-filter: blur(2px);
-
+.sphere-links {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content:first baseline;
 
+	padding: 16px;
 }
+
 .link {
-	box-shadow: inset 2px 2px 8px #d34a37;
-	border: 2px solid #fac9c3;
-	
-	margin: 4px;
-	padding: 8px;
 
+	background-color: var(--block-color);
+	box-shadow: 2px 2px 4px var(--shadow);
+	font-size: 14px;
 
+	margin: 8px 4px;
+	padding: 12px 16px;
 
 	transition: 200ms;
 }
 .link:hover {
-	box-shadow: inset 2px 2px 8px #ca331f;
-	border: 2px solid #fac9c3;
-
-	color: #df8073;
-
-	margin: 4px;
-	padding: 8px 16px;
-
+	transform: rotate(5deg);
 
 	transition: 200ms;
+}
+
+
+.image {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+
+.time {
+	font-size: 72px;
+	padding: 64px;
 }

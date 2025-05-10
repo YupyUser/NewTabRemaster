@@ -14,7 +14,7 @@
 
 :root {
 	/* --background: #222831; */
-	--background: url("./img/background2.jpg");
+	--background: url("./img/background3.jpg");
 
 	font-family: "Orbitron", sans-serif;
 }
@@ -36,22 +36,20 @@ header {
 }
 
 .time {
-	margin: 20px;
 	height-max: 120px;
 	padding: 8px;
 
 	text-align: center;
 	
-	backdrop-filter: blur(50px);
+	backdrop-filter: blur(5px);
 	
-	border: 2px solid #fac9c3;
-	border-radius: 5px;
+	border-bottom: 2px solid #fac9c3;
 	box-shadow: 3px 3px 5px #d34a37, -3px -3px 5px #d34a37;
 }
 
 
 .navigation {
-	font-size: 20px;
+	font-size: 14px;
 
 	margin: 20px;
 
@@ -63,16 +61,16 @@ header {
 	display: flex;
 	flex-direction: column;
 
-	width: 30%;
+	width: 32%;
 
 }
 
 .row {
-	margin-bottom: 32px;
+	
 }
 
 .title {
-	font-size: 30px;
+	font-size: 20px;
 	backdrop-filter: blur(8px);
 	box-shadow: inset 3px 3px 10px #d34a37;
 	border: 2px solid #fac9c3;
@@ -83,11 +81,12 @@ header {
 }
 .links {
 	backdrop-filter: blur(2px);
-
+	text-align: center;
 	display: flex;
 	flex-wrap: wrap;
-
-	height: 144px;
+	flex-direction: column;
+	
+	height: 196px;
 
 }
 .link {

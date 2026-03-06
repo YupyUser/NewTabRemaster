@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Iceland&display=swap');
+
 
 * {
 	padding: 0;
@@ -11,77 +12,102 @@
 	text-decoration: none;
 }
 
-:root {
-	background: #04080F;
-
-	font-family: "Quantico", sans-serif;
-
-
-}
-
 body {
-	color: #621d23;
-}
+	background: url("./10.jpg") no-repeat;
+	background-position: center top -240px;
+	background-attachment: fixed;
+  	font-family: "Iceland", sans-serif;
+	min-height: 100vh;
 
-header {
-	height: 80px;
-	background: #0D5D56;
-	color: #FDE8E9;
-	font-size: 36px;
-
-	padding: 4px;
-
-	display: flex;
-	align-items: center;
-}
-
-.time {
-	margin-left: 16px;
+	transition: 0.3s;
 }
 
 main {
 	display: flex;
-	flex-direction: column;
-}
-main section {
-	margin-bottom: 16px;
+	justify-content: space-between;
 }
 
-h2 {
-	display: block;
-	color: #FDE8E9;
-	background: #0D5D56;
-	padding-left: 16px;
-	text-align: center;
+.time {
+	font-size: 64px;
+	color: #191919;
+
+	margin-bottom: 32px;
 }
 
-.flex-container {
-
-	margin: 4px 8px;
+.news {
 	display: flex;
-	flex-wrap: wrap;
+	flex-direction: column;
+	height: 672px;
+}
+.news .link {
+	margin-top: 32px;
+
+	background-color:  #DACC3E;
+	color:#191919;
+}
+
+.link-sector {
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+footer {
+	position: absolute;
+	bottom:60px;
+	right: 60px;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 40vw;
+}
+
+.left {
+	margin-top:60px;
+	margin-left:60px;
+}
+.links {
+	margin-top:64px;
+	margin-right:60px;
+
+	height: 60vh;
+	width: 65vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	
 }
 
-a {	
+.link-sector {
+	display: flex;
+	align-items: flex-end;	
+}
+.link {
+	display: flex;
+	justify-content: center;
 	text-align: center;
-	background: #FDE8E9;
-	color: #621d23;
-	text-shadow: 1px 1px 2px #aeaeae;
-	padding: 16px;
-	margin: 4px;
-
-	width: 15vw;
-
-	transition: 0.2s;
-}
-a:hover {
-	transition: 0.2s;
-	color: #AD343E;
-}
-
-.most-used .flex-container a {
 	font-size: 24px;
-	padding: 16px 20px;
-	width: 24vw;
+
+	height: 48px;
+	width: fit-content;
+	padding: 8px;
+
+	background-color: #191919;
+	color: #DACC3E;
+	box-shadow: 2px 2px 4px #dacd3e50;
+}
+
+.news .link {
+	width: 120px;
+}
+div.link {
+	width: 180px;
+}
+div .link {
+	margin-left: 8px;
+}
+
+.link:hover {
+	background-color: #AFC97E;
+	color: #191919;
 }
